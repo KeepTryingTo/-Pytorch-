@@ -28,8 +28,8 @@ def get_parameter_number(model):
 #图像类别
 classes_person=['__background__','person']
 # 数据集对应的类别
-classes = ['1910300703', '1910300705', '1910300715', '1910300716', '1910300722']
-class_to_idx = {'1910300703': 0, '1910300705': 1, '1910300715': 2, '1910300716': 3, '1910300722': 4}
+classes = ['tom', 'jim']
+class_to_idx = {'tom': 0, 'jim': 1}
 
 transform = transforms.Compose([
     transforms.Resize(size=(232, 232), interpolation=transforms.InterpolationMode.BILINEAR),
